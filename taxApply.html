@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>开税票申请</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.net-responsive-bs/css/responsive.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.net-scroller-bs/css/scroller.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="css/tables.css">
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <style type="text/css">
+        #taxClientDetailForm table tbody td {
+            padding-top: 2px !important;
+            padding-bottom: 2px !important;
+        }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="css/layui/css/modules/code.css">
+    <link rel="stylesheet" type="text/css" href="css/layui/css/modules/laydate/laydate.css">
+    <link rel="stylesheet" type="text/css" href="css/layui/css/modules/layer/default/layer.css">
+</head>
+<!-- 表单 -->
+
+<body>
+    <!--1.开税票申请-->
+    <div class="row table_content product_1 project-team-newp new-window" id="taxApply">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>开税票申请</h2>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_search clearfix">
+                    <div class="x_search_l">
+                        <form id="taxApplyForm" action="#">
+                            <div class="title-warp clearfix">
+                                <div class="wx-mb-30 wx-pl-130 wx-mt-40 wx-pr-55 col-lg-6 col-md-6 col-sm-6 text-left wx-h-30 wx-lh-30 ">
+                                    <span>申请编号 :</span>
+                                    <span class="wx-ml-30">20161201</span>
+                                </div>
+                                <div class="wx-mb-30 wx-pl-130 wx-mt-40 wx-pr-55 col-lg-6 col-md-6 col-sm-6 text-left wx-h-30 wx-lh-30 ">
+                                    <span>申请日期 :</span>
+                                    <span class="wx-ml-30">2016-12-01</span>
+                                </div>
+                                <div class="wx-mb-30 wx-pl-130 wx-pr-55 col-lg-6 col-md-6 col-sm-6 text-left wx-h-30 wx-lh-30 ">
+                                    <span>市公司 :</span>
+                                    <span class="wx-ml-30">成都市公司</span>
+                                </div>
+                                <div class="wx-mb-30 wx-pl-130 wx-pr-55 col-lg-6 col-md-6 col-sm-6 text-left wx-h-30 wx-lh-30 ">
+                                    <span>分公司 :</span>
+                                    <span class="wx-ml-30">高新分公司</span>
+                                </div>
+                                <div class="wx-mb-30 wx-pl-130 wx-pr-55 col-lg-6 col-md-6 col-sm-6 text-left wx-h-30 wx-lh-30 ">
+                                    <span>合同编号 *</span><input style="margin-left:20px" class="wx-radius wx-w-250" type="text"><span style="position:relative;left:-2px" onclick="" class="fa fa-search form-control-feedback wx-fa-search wx-icon-font-span"></span>
+                                </div>
+                                <div class="wx-mb-30 wx-pl-130 wx-pr-55 col-lg-6 col-md-6 col-sm-6 text-left wx-h-30 wx-lh-30 ">
+                                    <span>合同名称 *</span><input style="margin-left:20px" class="wx-radius wx-w-250" type="text"><span style="position:relative;left:-2px" onclick="" class="fa fa-search form-control-feedback wx-fa-search wx-icon-font-span"></span>
+                                </div>
+                                <div class="wx-mb-30 wx-pl-130 wx-pr-55 col-lg-6 col-md-6 col-sm-6 text-left wx-h-30 wx-lh-30 ">
+                                    <span>合同总金额 :</span>
+                                    <span class="wx-ml-30">29040</span>
+                                </div>
+                                <div class="wx-mb-30 wx-pl-130 wx-pr-55 col-lg-6 col-md-6 col-sm-6 text-left wx-h-30 wx-lh-30 ">
+                                    <span>累计开票总金额 :</span>
+                                    <span class="wx-ml-30">3000</span>
+                                </div>
+                                <div class="wx-mb-30 wx-pl-130 wx-pr-55 col-lg-6 col-md-6 col-sm-6 text-left wx-h-30 wx-lh-30 ">
+                                    <span>可开票金额 :</span>
+                                    <span class="wx-ml-30 totalAvailableTaxSum">12140</span>
+                                </div>
+                                <div class="wx-mb-30 wx-pl-130 wx-pr-55 col-lg-6 col-md-6 col-sm-6 text-left wx-h-30 wx-lh-30 ">
+                                    <span>本次开票申请总金额 :</span>
+                                    <span class="wx-ml-30 taxApplyTotalSum"></span>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 text-left wx-pb-10 wx-plr-55">
+                                    <span>客户列表</span>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 wx-plr-55">
+                                    <table style="margin-bottom: 0" class="table table-striped table-bordered tables text-left">
+                                        <thead>
+                                            <tr>
+                                                <th>类别</th>
+                                                <th>客户名称</th>
+                                                <th>订单分配金额表</th>
+                                                <th>累计开票金额</th>
+                                                <th>可开票金额</th>
+                                                <th>本次开票客户名称</th>
+                                                <th>本次开票申请金额</th>
+                                                <th>是否开明细</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                    <div style="border: 1px solid rgb(221,221,221);border-collapse: collapse; height: 50px;line-height: 50px" class="col-lg-12 col-md-12 col-sm-12 text-left wx-pb-10 text-right">
+                                        <span>本次开票总金额 :</span>
+                                        <span class="wx-ml-30 taxApplyTotalSum">0</span>
+                                    </div>
+                                </div>
+                                <div class="x_submit">
+                                    <div class="wx-mb-30 wx-pl-130 wx-pr-55 wx-mt-40 col-lg-12 col-md-12 col-sm-12">
+                                        <button onclick="window.open('taxApplyAudit.html','_blank')" class="x_search_but wx-bg-blue">确认</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/layui.all.js"></script>
+    <script src="js/taxApply.js"></script>
+    <script>
+        // 3.开税票客户明细
+        function openTaxClientDetail() {
+            var html = '';
+            // 客户明细点击弹出页面
+            $('.clientDetail').click(function() {
+                // 当前客户名称值
+                // $('.curClientName').text($(this).parent().siblings('.clientName').text());
+                // 当前订单类别
+                // $('.curClientCategory').text($(this).parent().siblings('.clientCategory').text());
+                // 当前订单分配表金额
+                // $('.curOrderListSum').text($(this).parent().siblings('.orderListSum').text());
+                // 当前客户累计开票金额
+                // $('.curTotalTaxSum').text($(this).parent().siblings('.totalTaxSum').text());
+                // 当前客户可开票金额
+                // $('.curAvailableTaxSum').text($(this).parent().siblings('.availableTaxSum').text());
+                // 本次客户申请开票金额
+                $('.curTaxApplySum').text($(this).parent().siblings('.taxApplySum').text());
+                // 获取点击的是第几个button
+                detailClickIdx = $(this).attr('idx');
+                // layer变量
+                var opTCD;
+            });
+
+            // layer
+            function popTaxClientDetail() {
+                opTCD = layer.open({
+                    type: 1,
+                    content: $('#taxClientDetail'),
+                    area: ['1100px', '650px'],
+                    resize: false,
+                    title: "开税票客户明细",
+                    isOutAnim: false,
+                    end: function() {
+                        $("#taxClientDetail").css({
+                            "display": "none"
+                        })
+                    }
+                })
+            }
+        }
+
+    </script>
+</body>
+
+</html>

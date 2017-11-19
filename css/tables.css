@@ -1,0 +1,40 @@
+.selected {
+    background-color: lightskyblue;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd).selected {
+    background-color: lightskyblue;
+}
+
+.col-right {
+    text-align: right;
+    color: red;
+}
+
+.table-width-100 {
+    width: 100% !important;
+}
+
+table-with-90 {
+    width: 90% !important;
+}
+
+/*#addTable tbody tr td {*/
+/*text-align: center;*/
+/*}*/
+.ptRelationAddTd {
+    position: relative;
+    width: 100%;
+}
+
+.ptRelationAddTd-button {
+    margin-right: 0 !important;
+    height: 28px !important;
+}
+
+.wx-allot-order-div {
+    height: 40px;
+    width: 50%;
+    position: relative;
+    float: left;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>备机配件备用申请</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/datatables.net-responsive-bs/css/responsive.bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/datatables.net-scroller-bs/css/scroller.bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/layui/css/layui.css">
+        <link rel="stylesheet" type="text/css" href="css/tables.css">
+        <link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <div id="standby-application">
+            <div class="row table_content product_1 new-window" id="project">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="x_panel">
+                        <div class="x_title">
+                            <h2>备机配件备用申请</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="x_search clearfix">
+                            <div class="x_search_l">
+                                <form id="projectFrom" action="#">
+                                    <div style="padding-left: 131px"
+                                        class="wx-lh-30 wx-mb-30 wx-mt-40  wx-pr-55 col-lg-6 col-md-6 col-sm-6 text-left">
+                                        <span>备机陪申请编号:&nbsp;&nbsp;</span><span>BJ-01</span>
+                                    </div>
+                                    <div style="padding-left: 131px" class ="wx-lh-30 wx-mb-30 wx-mt-40  wx-pr-55 col-lg-6 col-md-6 col-sm-6 text-left">
+                                        <span>申请日期:&nbsp;&nbsp;</span><span>2016/12/12</span>
+                                    </div>
+                                    <div style="padding-left: 131px" class ="wx-mb-30 col-lg-6 col-md-6 col-sm-6 text-left">
+                                        <span>分公司:&nbsp;&nbsp;</span><span>成都市公司</span>
+                                    </div>
+                                    <div style="padding-left: 131px" class ="wx-mb-30 col-lg-6 col-md-6 col-sm-6 text-left">
+                                        <span>申请人:&nbsp;&nbsp;</span><span>张三</span>
+                                    </div>
+                                    <div class ="wx-mb-30 wx-pr-55 col-lg-6 col-md-6 col-sm-6">
+                                        <span>供应商名称&nbsp;*</span>
+                                        <input class="wx-radius wx-w-250" type="text" name="bidOpenTime"/>
+                                        <span class="fa fa-search form-control-feedback wx-fa-search wx-icon-font-span"
+                                        aria-hidden="true"></span>
+                                    </div>
+                                    <div class ="wx-mb-30 wx-pr-55 col-lg-6 col-md-6 col-sm-6">
+                                        <span>供应商编号&nbsp;*</span>
+                                        <input class="wx-radius wx-w-250" type="text" name="bidOpenTime"/>
+                                        <span class="fa fa-search form-control-feedback wx-fa-search wx-icon-font-span"
+                                        aria-hidden="true"></span>
+                                    </div>
+                                    <div style="padding-left: 55px;position: relative;"
+                                        class="wx-lh-30 text-left wx-pr-55 col-lg-12 col-md-12 col-sm-12">
+                                        <span>产品编号</span>
+                                        <span style="width:110px;position: absolute; right: 55px" class="x_search_but wx-bg-green choice_list">选择采购订单</span>
+                                    </div>
+                                    
+                                    <div class="wx-plr-55 col-lg-12 col-md-12 col-sm-12">
+                                        <table table id="addTable" class="table table-striped table-bordered tables">
+                                            <thead>
+                                                <tr>
+                                                    <th><span class="basics-my_checkbox all_checkbox"></span></th>
+                                                    <th>采购订单编号</th>
+                                                    <th>采购订单类型</th>
+                                                    <th>产品名称</th>
+                                                    <th>产品编号</th>
+                                                    <th>规格型号</th>
+                                                    <th>品牌</th>
+                                                    <th>总数量</th>
+                                                    <th>申请数量</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><span onclick="checkNormalSpan(this)" class="basics-my_checkbox"></span></td>
+                                                    <td>CG-002</td>
+                                                    <td>备机配件</td>
+                                                    <td>台式电脑</td>
+                                                    <td>CP-002</td>
+                                                    <td>YH-134</td>
+                                                    <td>联想</td>
+                                                    <td>100</td>
+                                                    <td><input type="text"></td>
+                                                    <td><button class="wx-delete-btn">删除</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span onclick="checkNormalSpan(this)" class="basics-my_checkbox"></span></td>
+                                                    <td>CG-003</td>
+                                                    <td>备机配件</td>
+                                                    <td>平板电脑</td>
+                                                    <td>CP-003</td>
+                                                    <td>Y-3</td>
+                                                    <td>联想</td>
+                                                    <td>80</td>
+                                                    <td><input type="text"></td>
+                                                    <td><button class="wx-delete-btn">删除</button></td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class ="wx-mb-30 wx-pr-55 col-lg-6 col-md-6 col-sm-6">
+                                        <span>物流编号</span>
+                                        <input class=" wx-w-250" type="text" maxlength="15"/>
+                                    </div>
+                                    <div class ="wx-mb-30 wx-pr-55 col-lg-6 col-md-6 col-sm-6">
+                                        <span>物流公司名称</span>
+                                        <input class=" wx-w-250" type="text" maxlength="15"/>
+                                    </div>
+                                    <div class ="wx-mb-30 wx-pr-55 col-lg-6 col-md-6 col-sm-6">
+                                        <span>收货人</span>
+                                        <input class=" wx-w-250" type="text" maxlength="15"/>
+                                    </div>
+                                    <div class ="wx-mb-30 wx-pr-55 col-lg-6 col-md-6 col-sm-6">
+                                        <span>联系电话</span>
+                                        <input class=" wx-w-250" type="text" maxlength="15"/>
+                                    </div>
+                                    <div class ="wx-mb-30 wx-pr-55 col-lg-12 col-md-12 col-sm-12">
+                                        <span>收货地址</span>
+                                        <input class=" wx-w-250" style="width: 77.4%" type="text" maxlength="15"/>
+                                    </div>
+                                    <div class="x_submit clearfix">
+                                        <div class="wx-mb-60 wx-pr-55 wx-mt-40 col-lg-12 col-md-12 col-sm-12">
+                                            <button class="x_search_but wx-bg-blue">确认
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        popId = layer.open({
+            title: "产品模板",
+            area: ['auto', '600px'],
+            resize: false,
+            type: 1,
+            content: $("#standby-application"),
+            cancel: function() {
+                $("#standby-application").css({
+                    "display": "none"
+                })
+            },
+            end: function() {
+                $("#standby-application").css({
+                    "display": "none"
+                });
+            }
+        });
+        </script>
+    </body>
+</html>

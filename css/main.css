@@ -1,0 +1,1814 @@
+/* 通用  */
+
+html,
+body {
+    min-width: 1030px;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    font-family: "FontAwesome", "Microsoft YaHei" !important;
+}
+
+table thead th,
+tbody td {
+    white-space: nowrap;
+}
+
+article {
+    width: 1100px;
+    height: 700px;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid #000;
+}
+
+.x_title h2 {
+    width: auto;
+    font-size: 16px;
+}
+
+.product_1 .x_title {
+    padding-top: 30px;
+    padding-bottom: 8px;
+}
+
+.product_1 .x_panel {
+    margin-bottom: 0px;
+    padding: 10px 0;
+    border: none;
+}
+
+.product_1 .x_content {
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+#datatable3 {
+    min-width: 2000px;
+}
+
+.product_1 .new-project {
+    width: 100px;
+    height: 30px;
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 16px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.x_search input {
+    height: 30px;
+    color: #333;
+    font-weight: normal;
+    width: 154px;
+}
+
+.x_search_r {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.x_search_r .x_search_but {
+    display: inline-block;
+    height: 30px;
+    width: 80px;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.especially {
+    margin-top: 20px;
+}
+
+.wxIndex i {
+    display: none !important;
+}
+
+.thisDiv {
+    width: 100%;
+    height: 100px;
+}
+
+#wxiframe {
+    height: 100%;
+}
+
+
+/* 基础样式  */
+
+.wx-mb-10 {
+    margin-bottom: 10px;
+}
+
+.wx-gray {
+    color: #A0A0A0;
+}
+
+.wx-ml-8 {
+    margin-left: 8px;
+}
+
+.wx-blue {
+    color: #00a2e6;
+}
+
+.wx-red {
+    color: #d75452;
+}
+
+.wx-white {
+    color: #ffffff !important;
+}
+
+.wx-green {
+    color: #29ba9c
+}
+
+.wx-bg-red {
+    background-color: #d75452;
+}
+
+.wx-bg-green {
+    background-color: #29BA9C;
+}
+
+.wx-bg-blue {
+    background-color: #00a2e6;
+}
+
+.wx-circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.wx-state {
+    padding: 0 !important;
+    width: 50px;
+    height: 20px;
+    display: inline-block;
+}
+
+.wx-state span {
+    display: inline-block;
+    padding: 5px;
+    vertical-align: sub;
+}
+
+.wx-topbar {
+    text-align: right;
+    padding: 0 !important;
+}
+
+.wx-fa-search {
+    width: 30px;
+    height: 30px;
+    background-color: #00A2E6;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 55px;
+    margin-top: 0px;
+    border-top-right-radius: 4px 4px;
+    border-bottom-right-radius: 4px 4px;
+}
+
+.wx-radius {
+    border-top-right-radius: 4px 4px;
+    border-bottom-right-radius: 4px 4px;
+    border: 1px solid #a9a9a9;
+}
+
+.wx-block {
+    display: block;
+}
+
+.wx-fr {
+    float: right;
+}
+
+.wx-little-title {
+    font-weight: 600;
+}
+
+.wx-mb-20 {
+    margin-bottom: 20px;
+}
+
+.wx-mb-30 {
+    margin-bottom: 30px;
+}
+
+.wx-mb-40 {
+    margin-bottom: 40px;
+}
+
+.wx-mt-40 {
+    margin-top: 40px;
+}
+
+.wx-mt-20 {
+    margin-top: 20px;
+}
+
+.wx-ml-8 {
+    margin-left: 8px;
+}
+
+.wx-pt-10 {
+    padding-top: 10px;
+}
+
+.wx-pt-20 {
+    padding-top: 20px;
+}
+
+.wx-pr-29 {
+    padding-right: 29px;
+}
+
+.wx-pr-12 {
+    padding-right: 12px;
+}
+
+.wx-pr-45 {
+    padding-right: 45px;
+}
+
+.wx-pr-21 {
+    padding-right: 21px;
+}
+
+.wx-pr-55 {
+    padding-right: 55px;
+}
+
+.wx-plr-55 {
+    padding: 0 55px;
+}
+
+.wx-pl-55 {
+    padding-left: 55px;
+}
+
+.wx-pl-60 {
+    padding-left: 60px;
+}
+
+.wx-pl-130 {
+    padding-left: 130px;
+}
+
+.wx-pb-10 {
+    padding-bottom: 10px;
+}
+
+.wx-pb-20 {
+    padding-bottom: 20px;
+}
+
+.wx-w-250 {
+    width: 250px;
+}
+
+.wx-w-200 {
+    width: 200px;
+}
+
+.wx-h-30 {
+    height: 30px;
+}
+
+.wx-lh-30 {
+    line-height: 30px;
+}
+
+.new-window .wx-w-250 {
+    width: 250px;
+}
+
+.wx-w-140 {
+    width: 120px !important;
+}
+
+.wx-w-150 {
+    width: 150px;
+}
+
+.wx-fa-search {
+    width: 30px;
+    height: 30px;
+    background-color: #00A2E6;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 55px;
+    margin-top: 0px;
+    border-top-right-radius: 4px 4px;
+    border-bottom-right-radius: 4px 4px;
+    cursor: pointer!important;
+}
+
+.wx-fa-time {
+    cursor: text!important;
+}
+
+.wx-border-reset {
+    border: none;
+}
+
+.wx-radio {
+    background: url("../../production/images/radio.png");
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    display: block;
+}
+
+.wx-radioChecked {
+    background: url("../../production/images/radioChecked.png");
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    display: block;
+}
+
+.percentage {
+    position: absolute;
+    top: 7px;
+    right: 60px;
+}
+
+
+/*
+.form-control-feedback {
+    margin-top: 4px;
+}
+*/
+
+.x_title h2 {
+    width: auto;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.product_1 .x_title {
+    padding-top: 30px;
+    padding-bottom: 8px;
+}
+
+.product_1 .x_panel {
+    margin-bottom: 0px;
+    padding: 10px 0;
+    border: none;
+}
+
+.product_1 .x_content {
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.datatable_my_wrapper {
+    overflow-x: auto;
+    margin-bottom: 10px;
+}
+
+.datatable_my_wrapper thead .sorting_disabled {
+    min-width: 40px;
+    white-space: nowrap;
+}
+
+.datatable_my_wrapper tbody tr td {
+    white-space: nowrap;
+}
+
+.product_1 .new-project {
+    width: 100px;
+    height: 30px;
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 16px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.x_search {
+    font-weight: normal;
+    position: relative;
+}
+
+.x_search input {
+    height: 30px;
+    color: #333;
+    font-weight: normal;
+}
+
+.x_search_l {
+    margin-right: 96px;
+    text-align: right;
+}
+
+.x_search_r {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.x_search_but {
+    display: inline-block;
+    height: 30px;
+    width: 80px;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.x_search_but_100 {
+    width: 100px;
+}
+
+a:hover,
+a:focus {
+    color: #fff;
+}
+
+.new-window .wx-w-770 {
+    width: 800px;
+}
+
+.new-window .wx-w-692 {
+    width: 692px;
+}
+
+
+/*.form-control-feedback {
+    margin-top: 4px;
+}*/
+
+select {
+    width: 154px;
+    height: 30px;
+    font-weight: normal;
+    color: #333;
+    margin-left: 20px;
+    padding-left: 7px;
+}
+
+input {
+    margin-left: 20px;
+    width: 250px;
+    padding-left: 10px;
+    line-height: 30px;
+    height: 30px;
+    color: #333;
+}
+
+
+/*.form-control-feedback {
+    margin-right: 43px;
+}*/
+
+.product_1 .x_title {
+    padding-top: 0;
+}
+
+
+/* 首页表格 */
+
+.dataTables_paginate.paging_simple_numbers {
+    position: relative;
+    top: -30px;
+}
+
+button {
+    border: none
+}
+
+table>tbody>tr>td {
+    vertical-align: middle !important;
+}
+
+.resetP {
+    padding: 0;
+}
+
+.wx-seek-input-div div.dataTables_wrapper div.dataTables_info {
+    padding-top: 0;
+}
+
+.wx-seek-input-div .dataTables_paginate.paging_simple_numbers {
+    top: 5px;
+}
+
+.msg-box .n-msg {
+    font-size: 12px;
+}
+
+.x_search_bor {
+    border-bottom: 2px solid #E6E9ED;
+}
+
+.new-window .x_title {
+    margin-bottom: 0;
+}
+
+.new-window .x_search_l {
+    margin-right: 0;
+}
+
+.new-window .tables input[type=text],
+.new-window .tables select {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-left: 0;
+    height: 28px;
+}
+
+.new-window .tables tbody td {
+    padding: 2px 8px;
+}
+
+table .x_search_but {
+    height: 28px;
+}
+
+
+/* 功能板块 */
+
+
+/* ---------------------------------------------------system  */
+
+.system-information-org-pop-search {
+    width: 100% !important;
+}
+
+
+/* .basics-productCat-newpro #ptTempletSearchTable {
+    width:100%!important;
+    } */
+
+
+/* ---------------------------------------------------basics */
+
+.basics-productCat-newpro .percentage {
+    position: absolute;
+    top: 6px;
+    right: 20px;
+}
+
+.basics-productCat-newpro .percentage2 {
+    position: absolute;
+    top: 6px;
+    right: 54px;
+}
+
+.basics-productCat-newpro .percentage3 {
+    position: absolute;
+    top: 6px;
+    right: 64px;
+}
+
+.basics-productCat-newpro .dataTables_paginate.paging_simple_numbers {
+    top: 0;
+}
+
+.myClass {
+    position: absolute;
+    top: 30px;
+    right: 55px;
+}
+
+.basics-productCat-newpro .col-f .myClass {
+    right: 28px
+}
+
+.basics-productCat-newpro .col-s .myClass {
+    right: 45px
+}
+
+.basics-productCat-newpro .col-t .myClass {
+    right: 53px
+}
+
+input.has-error {
+    border: 1px solid #d75452 !important;
+}
+
+
+/* 产品模版 */
+
+.attr-warp {
+    border: 1px solid #dddddd;
+    position: relative;
+    padding: 25px;
+    width: 400px;
+    float: right;
+}
+
+.attr-warp p {
+    margin-bottom: 20px;
+    padding-right: 244px;
+}
+
+.attr-warp p:last-child {
+    margin-bottom: 0;
+    padding-right: 0;
+}
+
+.attr-warp .title {
+    margin-bottom: 20px;
+    padding-right: 234px;
+}
+
+.attr-warp div {
+    padding-bottom: 20px;
+}
+
+.attr-warp .close-attr {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+    color: #000;
+    font-size: 20px;
+}
+
+.attr-warp input {
+    width: 210px;
+}
+
+
+/* 产品 */
+
+#after-server .msg-box {
+    top: 100px;
+    right: -65px;
+}
+
+.new-product .item3-form-content input,
+.new-product .item3-form-content select,
+.update-product .item3-form-content input,
+.update-product .item3-form-content select {
+    margin-left: 0;
+    width: 100%;
+    border-radius: 4px;
+}
+
+
+/* ---------------------------------------------------sale */
+
+.sale-tender .timeing {
+    margin-right: -4px;
+}
+
+.sales-pro-audit .x_search_l {
+    padding-left: 200px;
+}
+
+.sales-pro-addbid-L200 {
+    padding-left: 200px;
+}
+
+.sales-pro-addbid .myClass {
+    right: 110px;
+}
+
+
+/*合同管理*/
+
+.project-team-newp textarea {
+    width: 95.6%;
+    height: 145px;
+    text-indent: 26px;
+    resize: none;
+}
+
+#member_info .myClass {
+    top: 144px;
+    right: 27px;
+}
+
+#member_info .member-all {
+    position: relative;
+}
+
+#member_info .my-msg {
+    position: absolute;
+    top: 94px;
+    width: 100%;
+    left: -26px;
+    color: #d75452;
+}
+
+
+/*销售项目*/
+
+.project-team-newp .title-warp input,
+.project-team-newp .title-warp select {
+    width: 250px;
+}
+
+.project-team-newp #addTable tbody div {
+    height: 28px;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.project-team-newp #addTable tbody div input {
+    display: inline-block;
+    height: 28px;
+    margin-top: 0;
+    vertical-align: middle;
+}
+
+.project-team-newp #addTable tbody div label {
+    display: inline-block;
+    height: 28px;
+    margin-top: 0;
+    vertical-align: middle;
+    margin-bottom: 0;
+    line-height: 28px;
+    font-weight: normal;
+    padding-left: 2px;
+}
+
+#addTable tbody {
+    text-align: left;
+}
+
+
+/* ---------------------------------------------------purchase */
+
+
+/* ---------------------------------------------------storage */
+
+
+/* ---------------------------------------------------imple */
+
+
+/* ---------------------------------------------------afters */
+
+
+/* ---------------------------------------------------finance */
+
+
+/* ---------------------------------------------------todo */
+
+
+/* ---------------------------------------------------other */
+
+
+/* ---------------------------------------------------弹窗 */
+
+.search-btning {
+    width: 5%;
+}
+
+#dataTable {
+    width: 100% !important;
+}
+
+.priceStrategy {
+    width: 370px;
+    height: 40px;
+}
+
+input[type=checkbox] {
+    height: 18px;
+    width: 18px;
+}
+
+.layui-layer-page .layui-layer-content {
+    position: relative;
+    /*overflow: hidden !important;*/
+}
+
+.supplier-table tr td input[type=radio] {
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+ul li {
+    text-align: left;
+}
+
+ul li .span-name {
+    vertical-align: middle;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+ul li input[type=checkbox] {
+    vertical-align: middle;
+}
+
+
+/* ---------------------------------------------------supplement */
+
+.market-order-Basic-Info .myClass {
+    right: 10px;
+}
+
+.market-order-Basic-Info .wx-fa-search {
+    margin-right: 10px;
+}
+
+.market-order-commodity-list .myClass {
+    right: 0;
+    top: 25px;
+}
+
+.market-order-commodity-list .wx-fa-time,
+.market-order-assist .wx-fa-time {
+    top: 1px;
+}
+
+.market-order-branch .wx-fa-search {
+    right: -45px;
+}
+
+.market-order-content .market-order-distribution-input-div1,
+.market-order-content .market-order-distribution-input-div2,
+.market-order-content .market-order-distribution-input-div3,
+.market-order-content .market-order-distribution-input-div4 {
+    padding-bottom: 30px;
+}
+
+.market-order-distribution .myClass {
+    top: 25px;
+    right: 0;
+}
+
+.market-order-distribution .wx-fa-search {
+    height: 26px;
+    line-height: 28px;
+    top: 3px;
+    right: -40px;
+}
+
+.market-order-distribution-table .myClass {
+    display: none;
+}
+
+.market-order-new-product-left .wx-fa-search {
+    right: -55px;
+}
+
+.market-order-new-product-right-table tr td:first-child,
+.market-order-new-product-right-table tr th:first-child {
+    padding-top: 6px;
+}
+
+.market-order-commodity-list .market-order-input-div {
+    width: 530px;
+}
+
+.all-checkbox {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: #e5e5e5;
+    float: left;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+/*------------------------------------------------------------------------market------------------------------------------------------*/
+
+a:hover {
+    text-decoration: none;
+}
+
+.market-order-content {
+    color: #74879b;
+    width: 1110px;
+    padding: 0 15px;
+    font-size: 14px;
+    font-family: "FontAwesome", "Microsoft YaHei" !important;
+}
+
+.market-order {
+    color: #74879b;
+}
+
+.market-order-title {
+    width: 100%;
+    height: 47px;
+    line-height: 47px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.market-order-Basic-Info-title {
+    height: 22px;
+    /*border-bottom: 1px solid #ddd;*/
+    padding-top: 40px;
+}
+
+.market-order-input-div {
+    width: 360px;
+    float: left;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.market-order-input-div ul li {
+    width: 100%;
+    height: 30px;
+    line-height: 32px;
+    text-align: right;
+    margin-top: 20px;
+    position: relative;
+}
+
+.market-order-input-div ul li.market-order-margin-0 {
+    margin-top: 0;
+}
+
+.market-order-input-div ul li input {
+    height: 30px;
+    margin-left: 20px;
+}
+
+.market-order-input-div ul li select {
+    height: 30px;
+    margin-left: 20px;
+}
+
+.market-order-assist .market-order-assist-input-div1,
+.market-order-assist .market-order-assist-input-div2 {
+    width: 530px;
+}
+
+.market-order-assist .myClass {
+    right: 2px;
+}
+
+.market-order-seek-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #00a2e6;
+    text-align: center;
+    line-height: 32px;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.market-order-seek-icons {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url("../../production/images/seek-icon.png") no-repeat;
+    background-size: cover;
+    margin: 9px auto 0 auto;
+}
+
+.market-order-Basic-Info {
+    overflow: hidden;
+}
+
+.market-order-Basic-Info div.wx-mb-20 {
+    text-align: right;
+}
+
+.market-order-Basic-Info-title a {
+    display: block;
+    width: 80px;
+    height: 28px;
+    background: #4ac9bf;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    border-radius: 4px;
+    float: right;
+    position: relative;
+    top: -7px;
+}
+
+.market-order-teble1-th1,
+.market-order-teble1-th11 {
+    width: 100px;
+}
+
+.market-order-teble1-th2,
+.market-order-teble1-th3,
+.market-order-teble1-th5,
+.market-order-teble1-th6,
+.market-order-teble1-th7,
+.market-order-teble1-th8,
+.market-order-teble1-th9,
+.market-order-teble1-th10 {
+    width: auto;
+    padding-left: 10px;
+    padding-left: 10px;
+    word-break: keep-all;
+}
+
+.market-order-teble1-th4 {
+    width: 60px;
+}
+
+.market-order-teble1-th12 {
+    width: 480px;
+}
+
+.market-order-teble1-th13 {
+    width: 110px;
+}
+
+.market-order-commodity-list {
+    overflow: hidden;
+}
+
+.market-order-commodity-list .market-order-commodity-list-table .myClass {
+    display: none;
+}
+
+.market-order-commodity-list-table tr th,
+.market-order-commodity-list-table tr td {
+    height: 33px;
+    font-weight: 300;
+    border: 1px solid #ddd;
+}
+
+.market-order-commodity-list-table-div {
+    width: auto;
+    min-width: 100%;
+    /*overflow-x: auto;*/
+}
+
+.market-order-commodity-list-table {
+    width: auto;
+    min-width: 100%;
+}
+
+.market-order-commodity-list-table thead th {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    white-space: nowrap;
+}
+
+.market-order-commodity-list-table tbody td {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    white-space: nowrap;
+}
+
+.market-order-commodity-list-table tbody td span {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.market-order-number-input,
+.market-order-FYnumber-input {
+    width: 60px;
+    height: 26px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 0;
+}
+
+.market-order-commodity-list-table tr td {
+    text-align: center;
+}
+
+.market-order-total_price-input {
+    width: 80px;
+    height: 26px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 0;
+}
+
+.market-order-item-checkbox {
+    width: 46px;
+    height: 16px;
+    line-height: 16px;
+    margin-left: 9px;
+    float: left;
+}
+
+.market-order-checkbox {
+    display: block;
+    display: inline-table;
+    width: 16px;
+    height: 16px;
+    background: #e5e5e5;
+    /*float: left;*/
+    border-radius: 4px;
+}
+
+.market-order-Checked {
+    background: url("../../production/images/checkbox-on.png") no-repeat;
+    background-size: cover;
+}
+
+.market-order-warning {
+    color: #d75452;
+}
+
+.market-order-warning-icon {
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background: url("../../production/images/icons8-error.png") no-repeat;
+    background-size: cover;
+    position: relative;
+    left: -5px;
+    top: 2px;
+}
+
+.market-order-allocation {
+    width: 72px;
+    height: 28px;
+    display: inline-block;
+    background: #4ac9bf;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.market-order-data-icons {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../../production/images/dateicon.png") no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 3px;
+}
+
+.market-order-assist-input-div1 {
+    width: 355px;
+    float: left;
+}
+
+.market-order-assist-input-div2 {
+    width: 415px;
+    float: left;
+}
+
+.market-order-Hint_text {
+    color: #d75452;
+    position: absolute;
+    right: -150px;
+    top: 0;
+}
+
+.market-order-assist {
+    overflow: hidden;
+}
+
+.market-order-distribution {
+    /*overflow: hidden;*/
+}
+
+.market-order-distribution-input-div1 {
+    width: 530px;
+    float: left;
+}
+
+.market-order-distribution-input-div2 {
+    width: 530px;
+    float: left;
+}
+
+.market-order-distribution-input-div3 {
+    width: 530px;
+    float: left;
+}
+
+.market-order-distribution-input-div4 {
+    width: 1060px;
+    margin-top: 0;
+}
+
+.market-order-distribution-input-div4 input {
+    width: 780px !important;
+}
+
+.market-order-market-order-distribution-input {
+    overflow: hidden;
+}
+
+.market-order-Basic-Info-titles {
+    padding-top: 20px;
+    border: 0;
+}
+
+.market-order-distribution-table {
+    width: 100%;
+}
+
+.market-order-distribution-table tr th {
+    text-align: left;
+    padding-left: 10px;
+    height: 34px;
+    border: 1px solid #ddd;
+    font-weight: 300;
+}
+
+.market-order-delete-btn {
+    width: 58px;
+    height: 26px;
+    border: 1px solid #ddd;
+    color: #555;
+    display: inline-block;
+    text-align: center;
+    line-height: 26px;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.market-order-delete-btn:hover {
+    color: #555;
+}
+
+.market-order-distribution-table tr td {
+    text-align: center;
+    border: 1px solid #ddd;
+    height: 33px;
+    position: relative;
+}
+
+.market-order-distribution-table tr td select {
+    width: 148px;
+    height: 26px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 0;
+}
+
+.market-order-distribution-table-number-input {
+    width: 80px;
+    height: 26px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 0;
+}
+
+.market-order-distribution-table-name-input {
+    width: 238px;
+    height: 26px;
+    border: 1px solid #ddd;
+    margin-left: 0;
+}
+
+.market-order-distribution-table-seek-icons {
+    width: 32px;
+    height: 28px;
+    right: 11px;
+    top: 2px;
+}
+
+.market-order-distribution-table-site-input {
+    width: 410px;
+    height: 26px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 0;
+}
+
+.market-order-distribution-table-seek-icons .market-order-seek-icons {
+    margin-top: 8px;
+}
+
+.market-order-distribution-table-th1 {
+    width: 170px;
+}
+
+.market-order-distribution-table-th2 {
+    width: 100px;
+}
+
+.market-order-distribution-table-th3 {
+    width: 260px;
+}
+
+.market-order-distribution-table-th4 {
+    width: 430px;
+}
+
+.market-order-distribution-table-th5 {
+    width: 78px;
+}
+
+.market-order-branch {
+    overflow: hidden;
+}
+
+.market-order-branch-input-div {
+    overflow: hidden;
+}
+
+.market-order-branch-item-input-div {
+    width: 360px;
+}
+
+.market-order-branch-input-div div ul li input {
+    border-radius: 0;
+}
+
+.market-order-bottom-btn {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.market-order-bottom-btn1 {
+    display: inline-block;
+    width: 120px;
+    height: 29px;
+    background: #4ac9bf;
+    color: #fff;
+    line-height: 29px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.market-order-bottom-btn2 {
+    display: inline-block;
+    width: 120px;
+    height: 29px;
+    background: #00a2e6;
+    color: #fff;
+    line-height: 29px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.wx-mb-20 .market-order-distribution-table-seek-icons {
+    height: 30px;
+    top: 0;
+}
+
+.market-order-branch-input-div .wx-mb-20 {
+    text-align: right;
+}
+
+.market-order-branch-input-div .market-order-seek-icon {
+    right: 13px;
+    top: 0;
+}
+
+
+/*产品搜索弹出*/
+
+.market-order-product-seek {
+    width: 943px;
+    height: 422px;
+    padding: 0 16px;
+    position: relative;
+    display: none;
+    margin-top: 20px;
+}
+
+.market-order-product-seek-title {
+    width: 100%;
+    height: 47px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    line-height: 47px;
+    color: #74879b;
+    margin-bottom: 30px;
+}
+
+.market-order-product-seek-input-div {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.market-order-product-seek-input-item-div {
+    width: 280px;
+    height: 72px;
+    line-height: 72px;
+    float: left;
+}
+
+.market-order-product-seek-input-item-div input {
+    width: 200px;
+}
+
+.market-order-product-seek-btn {
+    display: block;
+    width: 60px;
+    height: 30px;
+    background: #00a2e6;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 21px;
+}
+
+.market-order-product-seek-table {
+    width: 890px;
+    margin: 0 auto;
+}
+
+.market-order-product-seek-table tr th,
+.market-order-product-seek-table tr td {
+    height: 33px;
+    border: 1px solid #ddd;
+    padding-left: 8px;
+    font-weight: 300;
+}
+
+.market-order-product-seek-affirm {
+    display: block;
+    width: 120px;
+    height: 30px;
+    background: #00a2e6;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    right: 25px;
+    bottom: 45px;
+}
+
+
+/*新增产品弹出*/
+
+.market-order-new-product {
+    width: 940px;
+    height: 500px;
+    padding: 0 16px;
+    display: none;
+    margin-top: 20px;
+}
+
+.market-order-new-product-left {
+    width: 318px;
+    height: auto;
+    float: left;
+}
+
+.market-order-new-product-right {
+    width: 512px;
+    height: auto;
+    float: left;
+    margin-left: 50px;
+}
+
+.market-order-new-product-left ul li {
+    position: relative;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.market-order-new-product-left ul li a {
+    right: -2px;
+    top: 0;
+    height: 30px;
+}
+
+.market-order-new-product-left ul li input,
+.market-order-new-product-left ul li select {
+    width: 198px;
+}
+
+.market-order-new-product-left ul li.market-order-margin-0 {
+    margin-top: 0;
+}
+
+.market-order-new-product-right-title {
+    width: 100%;
+    height: 16px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.market-order-new-product-right-title .market-order-checkbox {
+    margin-right: 8px;
+    margin-left: 9px;
+}
+
+.market-order-new-product-right-table {
+    width: 100%;
+}
+
+.market-order-new-product-right-table tr td,
+.market-order-new-product-right-table tr th {
+    font-weight: 300;
+    height: 33px;
+    padding-left: 8px;
+    border: 1px solid #ddd;
+}
+
+.market-order-new-product-right-table tr td input {
+    width: 90px;
+    height: 26px;
+    border: 1px solid #ddd;
+    margin-left: 0;
+    border-radius: 4px;
+}
+
+
+/*分配ID*/
+
+.market-order-allocation-ID {
+    width: 573px;
+    height: 345px;
+    background: #fff;
+    padding: 0 16px;
+    position: relative;
+    display: none;
+    margin-top: 20px;
+}
+
+.market-order-allocation-ID-extend-btn {
+    width: 100px;
+    height: 30px;
+    background: #00a2e6;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    border-radius: 4px;
+}
+
+.market-order-allocation-ID-extend-div {
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
+
+.market-order-allocation-ID .market-order-product-seek-title {
+    margin-bottom: 20px;
+}
+
+.market-order-allocation-ID-table tr th,
+.market-order-allocation-ID-table tr td {
+    height: 33px;
+    padding-left: 8px;
+    font-weight: 300;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.market-order-allocation-ID-table tr td input {
+    width: 110px;
+    margin-left: 0;
+    height: 26px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.market-order-allocation-ID-table tr td input.market-order-distribution-table-seek-input {
+    width: 248px;
+}
+
+.market-order-allocation-ID-table {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.market-order-allocation-ID-table tr td .market-order-seek-icon {
+    top: 3px;
+    height: 26px;
+}
+
+.market-order-submit-icon {
+    width: 120px;
+    height: 30px;
+    background: #00a2e6;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    bottom: 60px;
+    right: 22px;
+}
+
+.layui-layer-title {
+    font-size: 16px !important;
+}
+
+.dataTable tr {
+    cursor: pointer;
+}
+
+.abcd {
+    width: 1110px;
+    padding: 0 20px;
+}
+
+.abcd .market-order-checkbox {
+    pointer-events: none;
+}
+
+.abcd .market-order-allocation {
+    pointer-events: none;
+}
+
+.abcd .market-order-delete-btn {
+    pointer-events: none;
+}
+
+
+/*采购订单产品表格*/
+
+#purchase-pt-tbody td input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 0;
+}
+
+#purchase-pt-tbody td .wx-fa-search {
+    position: relative;
+    right: 30px;
+}
+
+.basics-my_checkbox {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: #e5e5e5;
+    float: left;
+    border-radius: 4px;
+    position: relative;
+    /*top: 7px;*/
+    cursor: pointer;
+}
+
+.basics-checkbox_text {
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.basics-Checked {
+    background: url("../../production/images/checkbox-on.png") no-repeat;
+    background-size: cover;
+}
+
+
+/*新增盘点区域选择盒子*/
+
+.wx-newcheck {
+    border: 1px solid #ccc;
+    margin-left: 131px;
+    margin-right: 50px;
+    padding: 20px;
+}
+
+.wx-newcheck-sub1 {
+    border: 1px solid #ccc;
+    width: 25%;
+    height: 250px;
+    overflow-y: scroll;
+    float: left;
+}
+
+.wx-newcheck-content {
+    padding: 5px;
+}
+
+.wx-newcheck-sub2 {
+    border: 1px solid #ccc;
+    width: 72%;
+    margin-left: 28%;
+    height: 250px;
+    overflow-y: scroll;
+}
+
+
+/*盘点说明*/
+
+.wx-checkinfo {
+    display: block;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin: 0;
+}
+
+
+/*删除*/
+
+.wx-delete-btn {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/*分割线*/
+
+.wx-cutoff {
+    width: 100%;
+    height: 2px;
+    background-color: #eee;
+}
+
+
+/*咨询处理*/
+
+.wx-consult {
+    width: 85%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+
+/*采购订单编号列表盒子*/
+
+.wx-cgdd-box {
+    margin-bottom: 15px;
+}
+
+
+/*采购订单编号列表表头*/
+
+.wx-cgdd-list {
+    height: 50px;
+    font-size: 16px;
+    line-height: 40px;
+    margin-bottom: 23px;
+    position: relative;
+    border-bottom: 2px solid #e6e9ed;
+}
+
+.wx-cgdd-list div {
+    height: 24px;
+    line-height: 24px;
+    margin-top: 13px;
+}
+
+.wx-cgdd-list .basics-my_checkbox {
+    margin-top: 4px;
+    margin-right: 15px;
+}
+
+.wx-cgdd-list section {
+    width: 16px;
+    height: 100%;
+    position: absolute;
+}
+
+.wx-cgdd-list section img {
+    width: 16px;
+    height: 16px;
+}
+
+.wx-cgdd-list-close {
+    right: 40px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.wx-cgdd-list-delete {
+    right: 10px;
+    z-index: 100;
+    cursor: pointer;
+}

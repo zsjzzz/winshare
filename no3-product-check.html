@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8">
+		<title>盘点查看</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/datatables.net-bs/css/dataTables.bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/datatables.net-responsive-bs/css/responsive.bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/datatables.net-scroller-bs/css/scroller.bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/layui/css/layui.css">
+		<link rel="stylesheet" type="text/css" href="css/tables.css">
+		<link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<div id="product-check">
+			<div class="row table_content product_1 new-window" id="project">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="x_panel">
+						<div class="x_title">
+							<h2>盘点查看</h2>
+							<div class="clearfix"></div>
+						</div>
+						<div class="x_search clearfix">
+							<div class="x_search_l">
+								<form id="projectFrom" action="#">
+									<div style="padding-left: 131px"
+										class="wx-lh-30 wx-mb-30 wx-mt-40  wx-pr-55 col-lg-4 col-md-4 col-sm-4 text-left">
+										<span>盘点编号:&nbsp;&nbsp;</span><span>001</span>
+									</div>
+									<div style="padding-left: 131px" class ="wx-lh-30 wx-mb-30 wx-mt-40  wx-pr-55 col-lg-4 col-md-4 col-sm-4 text-left">
+										<span>盘点时间:&nbsp;&nbsp;</span><span>2016/12/12</span>
+									</div>
+									<div style="padding-left: 131px" class ="wx-lh-30 wx-mb-30 wx-mt-40  wx-pr-55 col-lg-4 col-md-4 col-sm-4 text-left">
+										<span>状态:&nbsp;&nbsp;</span><span>盘点中</span>
+									</div>
+									<div style="padding-left: 131px" class ="wx-mb-30 col-lg-4 col-md-4 col-sm-4 text-left">
+										<span>主体:&nbsp;&nbsp;</span><span>文轩教育</span>
+									</div>
+									<div style="padding-left: 131px" class ="wx-mb-30 col-lg-4 col-md-4 col-sm-4 text-left">
+										<span>产品盘点范围:&nbsp;&nbsp;</span><span>部分</span>
+									</div>
+									<div style="padding-left: 131px" class ="wx-mb-30 col-lg-4 col-md-4 col-sm-4 text-left">
+										<span>系统参与人:&nbsp;&nbsp;</span><span>张三</span>
+									</div>
+									<!-- 分割线 -->
+									<div class="col-lg-12 col-md-12 col-sm-12 wx-plr-55">
+										<div class="wx-cutoff"></div>
+									</div>
+									<div class="text-left wx-mb-10 wx-plr-55 wx-mt-20 col-lg-6 col-md-6 col-sm-6">
+										<span>文轩库差异产品列表</span>
+									</div>
+									
+									<div class="wx-plr-55 col-lg-12 col-md-12 col-sm-12">
+										<table id="addTable" class="table table-striped table-bordered tables">
+											<thead>
+												<tr>
+													<th><span class="basics-my_checkbox all_checkbox"></span></th>
+													<th>产品名称</th>
+													<th>产品编号</th>
+													<th>规格型号</th>
+													<th>品牌</th>
+													<th>单位</th>
+													<th>供应商</th>
+													<th>业务主体</th>
+													<th>地点</th>
+													<th>库位</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><span onclick="checkNormalSpan(this)" class="basics-my_checkbox"></span></td>
+													<td>CG-002</td>
+													<td>备机配件</td>
+													<td>台式电脑</td>
+													<td>CP-002</td>
+													<td>YH-134</td>
+													<td>联想</td>
+													<td>100</td>
+													<td><input type="text"></td>
+													<td><button class="wx-delete-btn">删除</button></td>
+												</tr>
+												<tr>
+													<td><span onclick="checkNormalSpan(this)" class="basics-my_checkbox"></span></td>
+													<td>CG-003</td>
+													<td>备机配件</td>
+													<td>平板电脑</td>
+													<td>CP-003</td>
+													<td>Y-3</td>
+													<td>联想</td>
+													<td>80</td>
+													<td><input type="text"></td>
+													<td><button class="wx-delete-btn">删除</button></td>
+												</tr>
+												<tr>
+													<td><span onclick="checkNormalSpan(this)" class="basics-my_checkbox"></span></td>
+													<td>CG-003</td>
+													<td>备机配件</td>
+													<td>平板电脑</td>
+													<td>CP-003</td>
+													<td>Y-3</td>
+													<td>联想</td>
+													<td>80</td>
+													<td><input type="text"></td>
+													<td><button class="wx-delete-btn">删除</button></td>
+												</tr>
+												<tr>
+													<td><span onclick="checkNormalSpan(this)" class="basics-my_checkbox"></span></td>
+													<td>CG-003</td>
+													<td>备机配件</td>
+													<td>平板电脑</td>
+													<td>CP-003</td>
+													<td>Y-3</td>
+													<td>联想</td>
+													<td>80</td>
+													<td><input type="text"></td>
+													<td><button class="wx-delete-btn">删除</button></td>
+												</tr>
+												
+											</tbody>
+										</table>
+									</div>
+									<div style="margin:17px 0 15px 0" class="col-lg-12 col-md-12 col-sm-12 wx-plr-55">
+										<div class="wx-cutoff"></div>
+									</div>
+									<div class="text-left wx-mb-10 wx-plr-55 wx-mt-20 col-lg-6 col-md-6 col-sm-6">
+										<span>双流库差异产品列表</span>
+									</div>
+									<div class="wx-plr-55 col-lg-12 col-md-12 col-sm-12">
+										<table id="addTable" class="table table-striped table-bordered tables">
+											<thead>
+												<tr>
+													<th><span class="basics-my_checkbox all_checkbox"></span></th>
+													<th>产品名称</th>
+													<th>产品编号</th>
+													<th>规格型号</th>
+													<th>品牌</th>
+													<th>单位</th>
+													<th>供应商</th>
+													<th>业务主体</th>
+													<th>地点</th>
+													<th>库位</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><span onclick="checkNormalSpan(this)" class="basics-my_checkbox"></span></td>
+													<td>CG-002</td>
+													<td>备机配件</td>
+													<td>台式电脑</td>
+													<td>CP-002</td>
+													<td>YH-134</td>
+													<td>联想</td>
+													<td>100</td>
+													<td><input type="text"></td>
+													<td><button class="wx-delete-btn">删除</button></td>
+												</tr>
+												<tr>
+													<td><span onclick="checkNormalSpan(this)" class="basics-my_checkbox"></span></td>
+													<td>CG-003</td>
+													<td>备机配件</td>
+													<td>平板电脑</td>
+													<td>CP-003</td>
+													<td>Y-3</td>
+													<td>联想</td>
+													<td>80</td>
+													<td><input type="text"></td>
+													<td><button class="wx-delete-btn">删除</button></td>
+												</tr>
+												<tr>
+													<td><span onclick="checkNormalSpan(this)" class="basics-my_checkbox"></span></td>
+													<td>CG-003</td>
+													<td>备机配件</td>
+													<td>平板电脑</td>
+													<td>CP-003</td>
+													<td>Y-3</td>
+													<td>联想</td>
+													<td>80</td>
+													<td><input type="text"></td>
+													<td><button class="wx-delete-btn">删除</button></td>
+												</tr>
+												<tr>
+													<td><span onclick="checkNormalSpan(this)" class="basics-my_checkbox"></span></td>
+													<td>CG-003</td>
+													<td>备机配件</td>
+													<td>平板电脑</td>
+													<td>CP-003</td>
+													<td>Y-3</td>
+													<td>联想</td>
+													<td>80</td>
+													<td><input type="text"></td>
+													<td><button class="wx-delete-btn">删除</button></td>
+												</tr>
+												
+											</tbody>
+										</table>
+									</div>
+									<div class="x_submit clearfix">
+										<div class="wx-mb-60 wx-pr-55 wx-mt-40 col-lg-12 col-md-12 col-sm-12">
+											<button class="x_search_but wx-bg-blue">确认
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+						<script type="text/javascript">
+			popId = layer.open({
+			    title: "产品模板",
+			    area: ['auto', '600px'],
+			    resize: false,
+			    type: 1,
+			    content: $("#product-check"),
+			    cancel: function() {
+			        $("#product-check").css({
+			            "display": "none"
+			        })
+			    },
+			    end: function() {
+			        $("#product-check").css({
+			            "display": "none"
+			        });
+			    }
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>咨询录入</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/datatables.net-responsive-bs/css/responsive.bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/datatables.net-scroller-bs/css/scroller.bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/layui/css/layui.css">
+        <link rel="stylesheet" type="text/css" href="css/tables.css">
+        <link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+            <div id="logConsult">
+                <div class="row table_content product_1 new-window" id="project">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h2>咨询录入</h2>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_search clearfix">
+                                <div class="x_search_l">
+                                    <form id="projectFrom" action="#">
+                                        <div class="wx-mb-30 wx-mt-40 wx-pr-55 col-lg-12 col-md-12 col-sm-12 x_search_l">
+                                            <span style="width:110px;position: absolute; right: 55px" class="x_search_but wx-bg-green choice_list">查询知识库</span>
+                                        </div>
+                                        <div class="wx-mb-30 wx-mt-40 wx-pr-55 col-lg-6 col-md-6 col-sm-6 x_search_l">
+                                            <span>咨询标题&nbsp;*</span>
+                                            <input class="wx-radius wx-w-250" type="text">
+                                        </div>
+                                        <div style="padding-left: 185px" class ="wx-lh-30 wx-mt-40  wx-mb-30 col-lg-6 col-md-6 col-sm-6 text-left">
+                                            <span>咨询编号:&nbsp;&nbsp;</span><span>001</span>
+                                        </div>
+                                        <div class ="wx-mb-30  wx-pr-55 col-lg-6 col-md-6 col-sm-6 x_search_l">
+                                            <span>业务主体&nbsp;*</span>
+                                            <select style="width: 250px;">
+                                                <option value="">全部</option>
+                                                <option value="">部分</option>
+                                            </select>
+                                        </div>
+                                        <div class ="wx-mb-30 wx-pr-55 col-lg-6 col-md-6 col-sm-6 x_search_l">
+                                            <span>时间&nbsp;*</span>
+                                            <input class="wx-radius wx_daterange wx-w-250" type="text" name="bidOpenTime"/>
+                                            <span class="fa fa-calendar form-control-feedback right wx-fa-search wx-fa-time"
+                                            aria-hidden="true"></span>
+                                        </div>
+                                        <div class="text-left wx-mb-10 wx-plr-55 wx-mt-20 col-lg-6 col-md-6 col-sm-6">
+                                            <span>部门&nbsp;*</span>
+                                        </div>
+                                        
+                                        <div class="wx-lh-30 wx-mb-30 wx-plr-55 col-lg-12 col-md-12 col-sm-12">
+                                            <span style="width:110px;position: absolute; right: 55px" class="x_search_but wx-bg-green choice_list">移交处理</span>
+                                            <div class="wx-consult">
+                                                <div class="col-lg-3 col-md-3 col-sm-3 wx-newcheck-content">
+                                                    <span style="top: 7px;margin:0px 10px 0px 5px"onclick="checkNormalSpan(this)" class="basics-my_checkbox wx-newcheck-conten"></span>
+                                                    <span>市场部</span>
+                                                </div>
+                                                <div class="col-lg-3 col-md-3 col-sm-3 wx-newcheck-content">
+                                                    <span style="top: 7px;margin:0px 10px 0px 5px"onclick="checkNormalSpan(this)" class="basics-my_checkbox wx-newcheck-conten"></span>
+                                                    <span>采购部</span>
+                                                </div>
+                                                <div class="col-lg-3 col-md-3 col-sm-3 wx-newcheck-content">
+                                                    <span style="top: 7px;margin:0px 10px 0px 5px"onclick="checkNormalSpan(this)" class="basics-my_checkbox wx-newcheck-conten"></span>
+                                                    <span>客服部</span>
+                                                </div>
+                                                <div class="col-lg-3 col-md-3 col-sm-3 wx-newcheck-content">
+                                                    <span style="top: 7px;margin:0px 10px 0px 5px"onclick="checkNormalSpan(this)" class="basics-my_checkbox wx-newcheck-conten"></span>
+                                                    <span>财务部</span>
+                                                </div>
+                                                <div class="col-lg-3 col-md-3 col-sm-3 wx-newcheck-content">
+                                                    <span style="top: 7px;margin:0px 10px 0px 5px"onclick="checkNormalSpan(this)" class="basics-my_checkbox wx-newcheck-conten"></span>
+                                                    <span>综合部</span>
+                                                </div>
+                                                <div class="col-lg-3 col-md-3 col-sm-3 wx-newcheck-content">
+                                                    <span style="top: 7px;margin:0px 10px 0px 5px"onclick="checkNormalSpan(this)" class="basics-my_checkbox wx-newcheck-conten"></span>
+                                                    <span>信息部</span>
+                                                </div>
+                                                <div class="col-lg-3 col-md-3 col-sm-3 wx-newcheck-content">
+                                                    <span style="top: 7px;margin:0px 10px 0px 5px"onclick="checkNormalSpan(this)" class="basics-my_checkbox wx-newcheck-conten"></span>
+                                                    <span>技术部</span>
+                                                </div>
+                                                <div class="col-lg-3 col-md-3 col-sm-3 wx-newcheck-content">
+                                                    <span style="top: 7px;margin:0px 10px 0px 5px"onclick="checkNormalSpan(this)" class="basics-my_checkbox wx-newcheck-conten"></span>
+                                                    <span>人事部</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="wx-lh-30 text-left wx-plr-55 col-lg-12 col-md-12 col-sm-12">
+                                            <span>录入咨询内容</span>
+                                        </div>
+                                        <div class="wx-lh-30 text-left wx-plr-55 col-lg-12 col-md-12 col-sm-12">
+                                            <input style="width: 100%;height: 100px;" type="text" class="wx-checkinfo">
+                                        </div>
+                                        <div class="wx-lh-30 text-left wx-plr-55 col-lg-12 col-md-12 col-sm-12">
+                                            <span>录入解答情况</span>
+                                        </div>
+                                        <div class="wx-lh-30 text-left wx-plr-55 col-lg-12 col-md-12 col-sm-12">
+                                            <input style="width: 100%;height: 100px;" type="text" class="wx-checkinfo">
+                                        </div>
+                                        <div class="x_submit clearfix">
+                                            <div class="wx-mb-60 wx-pr-55 wx-mt-40 col-lg-12 col-md-12 col-sm-12">
+                                                <button class="x_search_but wx-bg-blue">确认
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="css/layui/layui.js"></script>
+        <script type="text/javascript">
+        popId = layer.open({
+            title: "产品模板",
+            area: ['auto', '600px'],
+            resize: false,
+            type: 1,
+            content: $("#logConsult"),
+            cancel: function() {
+                $("#logConsult").css({
+                    "display": "none"
+                })
+            },
+            end: function() {
+                $("#logConsult").css({
+                    "display": "none"
+                });
+            }
+        });
+        </script>
+    </body>
+</html>

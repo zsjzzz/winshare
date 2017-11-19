@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>供应商对账</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.net-responsive-bs/css/responsive.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.net-scroller-bs/css/scroller.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="css/tables.css">
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div id="suppliers-statements">
+        <div class="row table_content product_1 new-window" id="project">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>供应商对账</h2>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_search clearfix">
+                        <div class="x_search_l">
+                            <form id="projectFrom" action="#">
+                                <div style="padding-left: 131px" class="wx-lh-30 wx-mb-30 wx-mt-40  wx-pr-55 col-lg-6 col-md-6 col-sm-6 text-left">
+                                    <span>编制单位:&nbsp;&nbsp;</span><span>四川文轩教育科技有限公司</span>
+                                </div>
+                                <div style="padding-left: 131px" class="wx-lh-30 wx-mb-30 wx-mt-40  wx-pr-55 col-lg-6 col-md-6 col-sm-6 text-left">
+                                    <span>制表日期:&nbsp;&nbsp;</span><span>2016/12/12</span>
+                                </div>
+                                <div style="padding-left: 131px" class="wx-mb-30 col-lg-6 col-md-6 col-sm-6 text-left">
+                                    <span>对账编号:&nbsp;&nbsp;</span><span>DZ-001</span>
+                                </div>
+                                <div style="padding-left: 131px" class="wx-mb-30 col-lg-6 col-md-6 col-sm-6 text-left">&nbsp;
+                                </div>
+                                <div style="padding-left: 131px" class="wx-mb-30 wx-pr-55 col-lg-6 col-md-6 col-sm-6 text-left">
+                                    <span>供应商名称&nbsp;*</span>
+                                    <input class="wx-radius wx-w-250" type="text" name="bidOpenTime" /><span style="margin-right: 0;position: relative;left: -5px;top:1px" class="fa fa-search form-control-feedback wx-fa-search wx-icon-font-span" aria-hidden="true"></span>
+                                </div>
+                                <div style="padding-left: 131px" class="wx-mb-30 wx-pr-55 col-lg-6 col-md-6 col-sm-6 text-left">
+                                    <span>供应商编号&nbsp;*</span>
+                                    <input class="wx-radius wx-w-250" type="text" name="bidOpenTime" /><span style="margin-right: 0;position: relative;left: -5px;top:1px" class="fa fa-search form-control-feedback wx-fa-search wx-icon-font-span" aria-hidden="true"></span>
+                                </div>
+                                <div style="padding-left: 131px" class="wx-mb-30 col-lg-6 col-md-6 col-sm-6 text-left">
+                                    <span>采购总金额:&nbsp;&nbsp;</span><span>120000</span>
+                                </div>
+                                <div style="padding-left: 131px" class="wx-mb-30 col-lg-6 col-md-6 col-sm-6 text-left">
+                                    <span>预付款金额:&nbsp;&nbsp;</span><span>0</span>
+                                </div>
+                                <div style="padding-left: 131px" class="wx-mb-30 col-lg-6 col-md-6 col-sm-6 text-left">
+                                    <span>总调整金额:&nbsp;&nbsp;</span><span>120000</span>
+                                </div>
+                                <div style="padding-left: 131px" class="wx-mb-30 col-lg-6 col-md-6 col-sm-6 text-left">
+                                    <span>结算金额:&nbsp;&nbsp;</span><span>240000</span>
+                                </div>
+                                <div style="padding-left: 55px;position: relative;margin-bottom: 2px" class="wx-lh-30 text-left wx-pr-55 col-lg-12 col-md-12 col-sm-12">
+                                    <span>&nbsp;</span>
+                                    <span style="position: absolute; right: 55px" class="x_search_but wx-bg-green choice_list">添加</span>
+                                </div>
+
+                                <div class="wx-plr-55 col-lg-12 col-md-12 col-sm-12 wx-cgdd-box">
+                                    <div style="border: 1px solid #e6e9ed" class="col-lg-12 col-md-12 col-sm-12">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 wx-cgdd-list">
+                                            <section class="wx-cgdd-list-close"><img src="imgs/up.png"></section>
+                                            <section class="wx-cgdd-list-delete"><img src="imgs/close.png"></section>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 text-left">
+                                                <span class="basics-my_checkbox all_checkbox"></span><span>采购订单编号:&nbsp;&nbsp;</span><span>C-001</span>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 text-left">
+                                                <span>采购订单总金额:&nbsp;&nbsp;</span><span>50000</span>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 text-left">
+                                                <span>采购日期:&nbsp;&nbsp;</span><span>2016/12/13</span>
+                                            </div>
+                                        </div>
+                                        <div style="display: none" class="col-lg-12 col-md-12 col-sm-12 wx-cgdd-table">
+                                            <table table id="addTable" class="table table-striped table-bordered tables">
+                                                <thead>
+                                                    <tr>
+                                                        <th><span class="basics-my_checkbox all_checkbox"></span></th>
+                                                        <th>产品编号</th>
+                                                        <th>产品名称</th>
+                                                        <th>规格型号</th>
+                                                        <th>品牌</th>
+                                                        <th>单位</th>
+                                                        <th>采购数量</th>
+                                                        <th>退货数量</th>
+                                                        <th>实际付款数量</th>
+                                                        <th>采购单位</th>
+                                                        <th>采购金额</th>
+                                                        <th>调整金额</th>
+                                                        <th>调整原因</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span onclick="checkNormalSpan(this)" class="basics-my_checkbox"></span></td>
+                                                        <td>CG-002</td>
+                                                        <td>备机配件</td>
+                                                        <td>台式电脑</td>
+                                                        <td>CP-002</td>
+                                                        <td>YH-134</td>
+                                                        <td>联想</td>
+                                                        <td>100</td>
+                                                        <td>100</td>
+                                                        <td>100</td>
+                                                        <td>100</td>
+                                                        <td><input type="text"></td>
+                                                        <td><input type="text"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span onclick="checkNormalSpan(this)" class="basics-my_checkbox"></span></td>
+                                                        <td>CG-003</td>
+                                                        <td>备机配件</td>
+                                                        <td>平板电脑</td>
+                                                        <td>CP-003</td>
+                                                        <td>Y-3</td>
+                                                        <td>联想</td>
+                                                        <td>80</td>
+                                                        <td>80</td>
+                                                        <td>80</td>
+                                                        <td>80</td>
+                                                        <td><input type="text"></td>
+                                                        <td><input type="text"></td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wx-plr-55 col-lg-12 col-md-12 col-sm-12 wx-cgdd-box">
+                                    <div style="border: 1px solid #e6e9ed" class="col-lg-12 col-md-12 col-sm-12">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 wx-cgdd-list">
+                                            <section class="wx-cgdd-list-close"><img src="imgs/up.png"></section>
+                                            <section class="wx-cgdd-list-delete"><img src="imgs/close.png"></section>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 text-left">
+                                                <span class="basics-my_checkbox all_checkbox"></span><span>采购订单编号:&nbsp;&nbsp;</span><span>C-002</span>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 text-left">
+                                                <span>采购订单总金额:&nbsp;&nbsp;</span><span>50000</span>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 text-left">
+                                                <span>采购日期:&nbsp;&nbsp;</span><span>2016/12/13</span>
+                                            </div>
+                                        </div>
+                                        <div style="display:none" class="col-lg-12 col-md-12 col-sm-12 wx-cgdd-table">
+                                            <table table id="addTable" class="table table-striped table-bordered tables">
+                                                <thead>
+                                                    <tr>
+                                                        <th><span class="basics-my_checkbox all_checkbox"></span></th>
+                                                        <th>产品编号</th>
+                                                        <th>产品名称</th>
+                                                        <th>规格型号</th>
+                                                        <th>品牌</th>
+                                                        <th>单位</th>
+                                                        <th>采购数量</th>
+                                                        <th>退货数量</th>
+                                                        <th>实际付款数量</th>
+                                                        <th>采购单位</th>
+                                                        <th>采购金额</th>
+                                                        <th>调整金额</th>
+                                                        <th>调整原因</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span onclick="checkNormalSpan(this)" class="basics-my_checkbox"></span></td>
+                                                        <td>CG-002</td>
+                                                        <td>备机配件</td>
+                                                        <td>台式电脑</td>
+                                                        <td>CP-002</td>
+                                                        <td>YH-134</td>
+                                                        <td>联想</td>
+                                                        <td>100</td>
+                                                        <td>100</td>
+                                                        <td>100</td>
+                                                        <td>100</td>
+                                                        <td><input type="text"></td>
+                                                        <td><input type="text"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span onclick="checkNormalSpan(this)" class="basics-my_checkbox"></span></td>
+                                                        <td>CG-003</td>
+                                                        <td>备机配件</td>
+                                                        <td>平板电脑</td>
+                                                        <td>CP-003</td>
+                                                        <td>Y-3</td>
+                                                        <td>联想</td>
+                                                        <td>80</td>
+                                                        <td>80</td>
+                                                        <td>80</td>
+                                                        <td>80</td>
+                                                        <td><input type="text"></td>
+                                                        <td><input type="text"></td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wx-plr-55 col-lg-12 col-md-12 col-sm-12 wx-cgdd-box">
+                                    <div style="border: 1px solid #e6e9ed" class="col-lg-12 col-md-12 col-sm-12">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 wx-cgdd-list">
+                                            <section class="wx-cgdd-list-close"><img src="imgs/up.png"></section>
+                                            <section class="wx-cgdd-list-delete"><img src="imgs/close.png"></section>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 text-left">
+                                                <span class="basics-my_checkbox all_checkbox"></span><span>采购订单编号:&nbsp;&nbsp;</span><span>C-003</span>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 text-left">
+                                                <span>采购订单总金额:&nbsp;&nbsp;</span><span>50000</span>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 text-left">
+                                                <span>采购日期:&nbsp;&nbsp;</span><span>2016/12/13</span>
+                                            </div>
+                                        </div>
+                                        <div style="display:none" class="col-lg-12 col-md-12 col-sm-12 wx-cgdd-table">
+                                            <table table id="addTable" class="table table-striped table-bordered tables">
+                                                <thead>
+                                                    <tr>
+                                                        <th><span class="basics-my_checkbox all_checkbox"></span></th>
+                                                        <th>产品编号</th>
+                                                        <th>产品名称</th>
+                                                        <th>规格型号</th>
+                                                        <th>品牌</th>
+                                                        <th>单位</th>
+                                                        <th>采购数量</th>
+                                                        <th>退货数量</th>
+                                                        <th>实际付款数量</th>
+                                                        <th>采购单位</th>
+                                                        <th>采购金额</th>
+                                                        <th>调整金额</th>
+                                                        <th>调整原因</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span onclick="checkNormalSpan(this)" class="basics-my_checkbox"></span></td>
+                                                        <td>CG-002</td>
+                                                        <td>备机配件</td>
+                                                        <td>台式电脑</td>
+                                                        <td>CP-002</td>
+                                                        <td>YH-134</td>
+                                                        <td>联想</td>
+                                                        <td>100</td>
+                                                        <td>100</td>
+                                                        <td>100</td>
+                                                        <td>100</td>
+                                                        <td><input type="text"></td>
+                                                        <td><input type="text"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span onclick="checkNormalSpan(this)" class="basics-my_checkbox"></span></td>
+                                                        <td>CG-003</td>
+                                                        <td>备机配件</td>
+                                                        <td>平板电脑</td>
+                                                        <td>CP-003</td>
+                                                        <td>Y-3</td>
+                                                        <td>联想</td>
+                                                        <td>80</td>
+                                                        <td>80</td>
+                                                        <td>80</td>
+                                                        <td>80</td>
+                                                        <td><input type="text"></td>
+                                                        <td><input type="text"></td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="x_submit clearfix">
+                                    <div class="wx-mb-60 wx-pr-55 wx-mt-40 col-lg-12 col-md-12 col-sm-12">
+                                        <button style="width: 100px" class="x_search_but wx-bg-blue">提交
+                                            </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        tableCtrl();
+    })
+    
+    function tableCtrl() {
+        $('.wx-cgdd-list-close').click(function() {
+            console.log($(this).parents('.wx-cgdd-list').siblings('.wx-cgdd-table').css('display'))
+            if($(this).parents('.wx-cgdd-list').siblings('.wx-cgdd-table').css('display') == 'none') {
+               $(this).parents('.wx-cgdd-list').siblings('.wx-cgdd-table').show();
+                $(this).css('transform', 'rotateZ(180deg)');
+            }
+            else if($(this).parents('.wx-cgdd-list').siblings('.wx-cgdd-table').css('display') == 'block') {
+               $(this).parents('.wx-cgdd-list').siblings('.wx-cgdd-table').hide();
+                $(this).css('transform', 'rotateZ(0deg)');
+            }
+        })
+        $('.wx-cgdd-list-delete').click(function() {
+            $(this).parents('.wx-cgdd-box').remove();
+        })
+    }
+    
+    </script>
+<!--
+    <script type="text/javascript">
+        popId = layer.open({
+            title: "产品模板",
+            area: ['auto', '600px'],
+            resize: false,
+            type: 1,
+            content: $("#standby-application"),
+            cancel: function() {
+                $("#standby-application").css({
+                    "display": "none"
+                })
+            },
+            end: function() {
+                $("#standby-application").css({
+                    "display": "none"
+                });
+            }
+        });
+
+    </script>
+-->
+</body>
+
+</html>
